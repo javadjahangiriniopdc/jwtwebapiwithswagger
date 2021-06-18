@@ -1,0 +1,150 @@
+git config --global user.email "javad.jahangiri.niopdc@gmail.com"
+git config --global user.name "javadjahangiriniopdc"
+to masir users/drjj007/.gitconfig
+hataman ba email,name github  yeki bashad
+---------------
+
+git init
+git add .
+git status
+git commit -m "gdjskldfjgl"
+git commit -a -m "fjlkdsfjaslkj"
+--------------------
+
+git rm --cached <file>..."
+-------------------------
+git diff
+------------------------
+git log
+git log --oneline
+git log -1 --oneline
+git log --help
+git log -p
+
+
+---------------
+change in one file
+git status
+ be ma neshon mide to one file tagirat izad shode
+git checkout -- .
+ 
+ akhari tagirat ro barmigardoneh
+ 
+git checkout --index.html 
+------------------------
+
+change in chand ta file
+git status
+ be ma neshon mide to chand ta file tagirat izad shode
+git add .
+ be stage add mishan
+ 
+git reset HEAD .
+ az stage kharj mishan
+ 
+ git checkout -- .
+ akhari tagirat ro barmigardoneh
+ ------------------------------
+ git log --oneline
+ git reset id-commit
+ git checkout -- .
+ --------------------------------
+ reset soft
+ 
+ git log --oneline
+ git reset id-commit
+ git checkout -- .
+ 
+ file ke bin commit ha ezafe shode pak nemish
+ 
+ 
+ 
+ reset hard
+  git log --oneline
+ git reset --hard id-commit
+ 
+ 
+  file ke bin commit ha ezafe shode pak mishe...
+  git checkout -- . dar reset --hard lazem nisit....
+  ---------------------------------------------------------------
+  branch-merge
+  master
+  
+  git log
+  git status
+  git branch dev
+  git branch -a
+  git checkout dev
+  git checkout master
+  git branch -d dev
+  git branch -a
+  git checkout -b developer
+  
+   tavazoh gabel switch bin branch ha degat konid ye git status begirm ke stage khali bashe 
+   
+   ye file jadid misazin
+   git status
+   git add .
+   git commit -m "add new file"
+   
+   to ye file ye tagiri midim bad yek sar commit mikonim
+   git commit -a -m "add change file"
+   
+   
+   
+   vard branch ke mikhahim behesh etelat tazrig konim mishim
+   git checkout master
+   git merge developer
+   
+   agar bekhahim be sort graph bebinim
+   git log --graph
+   
+   hala barmigradim be branch developer
+   git checkout developer
+   git merge master
+   
+  hala ba in kar do ta branch keki shod
+  ---------------------------------------------------------------- 
+farz konid to branch developer tilte ye page ro avaz mikonim
+git checkout developer
+avaz kardan title
+git commit -a -m "change title in branch developer"
+
+bad mirim to branch master ham tilte hamon page ro avaz mikonim
+git checkout master
+avaz kardan tilte 
+git commit -a -m "change title in branch master"
+
+git merge developer
+
+be ma conflict merge mideh (Mastre/Merging) mish be in halat kob degat konid 
+
+
+ tanagoz ro bartarf mikonim bad 
+  git add . 
+  git commit -m "resolve conflict"
+  lazm nist dige merge konim khodem merge mishe
+
+-----------------------------------------------
+ gitignore
+ touch .gitignore
+	 node_module/
+	 *.txt
+	 !a.txt
+	 
+git rm --cache -r .
+git add .
+git reset HEAD .
+git commit -m "change .gitignore"
+git status 
+-----------------------------------------------
+github
+git remote add origin https://github.com/javadjahangiriniopdc/test.git
+git remote -v
+git push -u origin master
+git pull origin 
+--------------------------------------------
+git clone https://github.com/javadjahangiriniopdc/test.git
+-------------------------------------------
+Fork
+

@@ -1,0 +1,58 @@
+tools>>Nuget package manager >>package manager setting
+name:nuget.org
+Source:https://www.nuget.org/api/v2/
+----------------------------------------
+shortkey in IntelliJ IDEA  
+Ctrl+Alt+L
+ctrl+/ comment
+ctrl+D dublicate line
+Alt+Enter Import Dependency in Code
+Alt+Insert-->Code Generator
+sout system.out.println()
+souf system.out.println("")
+------------------------
+shortkey in vs2019
+Ctrl+K Ctrl+C   Comment
+Ctrl+K Ctrl+U   UnComment
+Ctrl+K Ctrl+D Design Code 
+ctrl+D dublicate line
+prop automatic implement property
+ctor create constructor
+ctorf create constructor with parameters need resharper
+Ctrl+. for Import Dependency in Code
+Ctrl+Shift+B Build
+Console.writeline(i);
+Console.writeline($"mynumber={i}");
+cw Console.writeline()
+
+Ctrl+Shift+S Save All Document
+
+-------------------------------------------------------------------
+identity
+Microsoft.AspNetCore.Identity.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.SqlServer
+
+in web no need import indentity becuse Microsoft.AspNetCore.App 
+Contains identity
+
+Add-Migration InitioalCreator -Context "IdentityDbContext"
+Add-Migration InitioalCreator -Context "StudentDataContext"
+Update-database -Context "IdentityDbContext"
+Update-database -Context "StudentDataContext"
+---------------------------------------------------------------------
+How to Autometic Scaffold-DbContext
+Be careful Install-Package no need in AspNetCore WebApplication
+becuse Microsoft.AspNetCore.App Contains identity Microsoft.EntityFrameworkCore.SqlServer
+
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Scaffold-DbContext "Data Source=.;Initial Catalog=StoreApp;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+warning To protect potentially sensitive information in your connection string,
+ you should move it out of source code. 
+See http://go.microsoft.com/fwlink/?LinkId=723263 
+for guidance on storing connection strings.
+----------------------------------------------------------------------
+Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore.Tools 
+Scaffold-DbContext "Data Source=.;Initial Catalog=Test_DB;User ID=sa;Password=123" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
