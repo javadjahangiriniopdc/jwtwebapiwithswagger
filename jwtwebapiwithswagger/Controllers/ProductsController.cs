@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using jwtwebapiwithswagger.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace jwtwebapiwithswagger.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private readonly ApplicationDBContext _context;
